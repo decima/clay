@@ -11,11 +11,16 @@ framework:
         cookie_secure: auto
         cookie_samesite: lax
         storage_factory_id: session.storage.factory.native
+    error_controller: App\Controller\MainController::error
 
     #esi: true
     #fragments: true
     php_errors:
         log: true
+    exceptions:
+        Doctrine\DBAL\Exception\UniqueConstraintViolationException:
+            log_level: debug
+            status_code: 409
 
 when@test:
     framework:

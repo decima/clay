@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Symfony2PluginSettings">
+    <option name="pluginEnabled" value="true" />
+    <option name="methodParameterSettings">
+      <list>
+        <method_parameter_settings CallTo="\App\Utils\Exceptions\ExceptionManager" contributorName="parameter" MethodName="unprocessable" ReferenceProviderName="translation_key" />
+        <method_parameter_settings CallTo="\App\Utils\Exceptions\ExceptionManager" contributorName="parameter" MethodName="internal" ReferenceProviderName="translation_key" />
+        <method_parameter_settings CallTo="\App\Utils\Exceptions\ExceptionManager" contributorName="parameter" IndexParameter="1" MethodName="conflict" ReferenceProviderName="translation_key" />
+      </list>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,23 @@
+POST {{url}}/api/login_check
+Content-Type: application/json
+
+{
+  "username": "{{login}}",
+  "password": "{{password}}"
+}
+
+> {%
+    client.global.set("auth_token", response.body.token);
+%}
+###
+GET {{url}}/api/users/me
+Authorization: Bearer {{auth_token}}
+
+###
+POST {{url}}/api/users/register
+
+{
+"email":"{{login}}",
+"password":"{{password}}",
+"tosAccepted":true
+}
