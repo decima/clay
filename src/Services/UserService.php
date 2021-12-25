@@ -9,7 +9,7 @@ use App\Utils\Exceptions\ExceptionManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
-class UsersService
+class UserService
 {
     public function __construct(
         private EntityManagerInterface      $entityManager,
