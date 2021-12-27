@@ -9,3 +9,10 @@ Todo :
 - add categories management
 - add api routes
 - add tests
+
+## Caddy server
+
+Run using
+```
+caddy run --config Caddyfile
+```

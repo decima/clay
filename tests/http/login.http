@@ -10,6 +10,14 @@ Content-Type: application/json
     client.global.set("auth_token", response.body.token);
 %}
 ###
+POST http://localhost:8000/api/login_check
+Content-Type: application/json
+
+{
+  "username": "{{login}}",
+  "password": "{{password}}"
+}
+###
 GET {{url}}/api/users/me
 Authorization: Bearer {{auth_token}}
 
@@ -21,3 +29,5 @@ POST {{url}}/api/users/register
 "password":"{{password}}",
 "tosAccepted":true
 }
+###
+
